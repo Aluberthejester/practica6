@@ -3,7 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 use Illuminate\Database\Seeder;
+use App\Models\Player;
+use App\Models\Track;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,5 +23,10 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        
+        Player::factory(5)->create();
+        Track::factory(5)->create();
+        
+
     }
 }
